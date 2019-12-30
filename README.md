@@ -2,8 +2,6 @@
 
 This module will work only with Magento 2.3.0 and higher
 
-Module is using chart.js : https://www.chartjs.org/
-
 # **Install**
 
 ### Git
