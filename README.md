@@ -29,7 +29,7 @@ e.g.
 
 Go to Stores->Configuration->Monogo->Disable Customer Log
 
-- Enable module **Default value is 1 (Yes)**
+- Enable module **Default value is 0 (No)**
 
 ### Default values:
 enabled: 0
