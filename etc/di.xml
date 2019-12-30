@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Monogo
+ * @copyright Copyright (c) 2019 Monogo (https://monogo.pl)
+ * @package Monogo_DisableCustomerLog
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Model\Logger">
+        <plugin disabled="false" name="Monogo_DisableCustomerLog_Plugin_Customer_Logger" type="Monogo\DisableCustomerLog\Plugin\Customer\Model\Logger" />
+    </type>
+    <type name="Magento\Customer\Model\ResourceModel\Visitor">
+        <plugin disabled="false" name="Monogo_DisableCustomerLog_Plugin_Customer_ResourceModel_Visitor" type="Monogo\DisableCustomerLog\Plugin\Customer\Model\ResourceModel\Visitor" />
+    </type>
+</config>
