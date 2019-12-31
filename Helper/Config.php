@@ -42,7 +42,6 @@ class Config extends AbstractHelper
     ) {
         parent::__construct($context);
         $this->storeManager = $storeManager;
-        $this->resourceConnection = $resourceConnection;
     }
 
     /**
