@@ -6,7 +6,6 @@ namespace Monogo\DisableCustomerLog\Plugin\Customer\Model;
 use Monogo\DisableCustomerLog\Helper\Config;
 
 /**
- * PHP version 7.0
  * Class Logger
  *
  * @category Monogo
@@ -41,9 +40,9 @@ class Logger
     public function aroundLog(
         \Magento\Customer\Model\Logger $subject,
         callable $proceed,
-        $customerId,
+        int $customerId,
         array $data
-    ) {
+    ) : \Magento\Customer\Model\Logger {
         if ($this->config->getIsEnabled()) {
             return $subject;
         }

@@ -7,7 +7,6 @@ use Magento\Framework\Model\AbstractModel;
 use Monogo\DisableCustomerLog\Helper\Config;
 
 /**
- * PHP version 7.0
  * Class Visitor
  *
  * @category Monogo
@@ -42,7 +41,7 @@ class Visitor
         \Magento\Customer\Model\ResourceModel\Visitor $subject,
         callable $proceed,
         AbstractModel $object
-    ) {
+    ): \Magento\Customer\Model\ResourceModel\Visitor {
         if ($this->config->getIsEnabled()) {
             if ($object->getSessionId()) {
                 $converted = base_convert($object->getSessionId(), 36, 10);

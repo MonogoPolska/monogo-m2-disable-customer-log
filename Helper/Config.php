@@ -26,15 +26,10 @@ class Config extends AbstractHelper
     protected $storeManager;
 
     /**
-     * @var Context
-     */
-    protected $context;
-
-    /**
      * Config constructor.
      *
-     * @param Context               $context      Context
-     * @param StoreManagerInterface $storeManager StoreManagerInterface
+     * @param Context               $context
+     * @param StoreManagerInterface $storeManager
      */
     public function __construct(
         Context $context,
@@ -47,14 +42,14 @@ class Config extends AbstractHelper
     /**
      * Get Store Config by key
      *
-     * @param string $config_path Path
-     * @param int    $storeId     StoreId
+     * @param string $config_path
+     * @param null   $storeId
      *
-     * @return mixed
+     * @return string
      */
-    public function getConfig($config_path, $storeId = null)
+    public function getConfig(string $config_path, $storeId = null): string
     {
-        return $this->scopeConfig->getValue(
+        return (string)$this->scopeConfig->getValue(
             $config_path,
             ScopeInterface::SCOPE_STORE,
             $storeId
@@ -66,8 +61,8 @@ class Config extends AbstractHelper
      *
      * @return int
      */
-    public function getIsEnabled()
+    public function getIsEnabled(): int
     {
-        return $this->getConfig(self::CONFIG_PATH_ENABLED);
+        return (int)$this->getConfig(self::CONFIG_PATH_ENABLED);
     }
 }

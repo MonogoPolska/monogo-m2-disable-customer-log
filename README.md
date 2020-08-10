@@ -1,6 +1,6 @@
 #### Magento 2 module to disable customer logging for improve speed.
 
-This module will work only with Magento 2.3.0 and higher
+This module will work only with Magento 2.4.0 and higher
 
 # **Install**
 

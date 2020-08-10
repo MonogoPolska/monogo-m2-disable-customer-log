@@ -2,11 +2,11 @@
 <!--
 /**
  * @author Monogo
- * @copyright Copyright (c) 2019 Monogo (https://monogo.pl)
+ * @copyright Copyright (c) 2020 Monogo (https://monogo.pl)
  * @package Monogo_DisableCustomerLog
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Monogo_DisableCustomerLog" setup_version="1.0.0" />
+    <module name="Monogo_DisableCustomerLog" setup_version="2.0.1" />
 </config>
